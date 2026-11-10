@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="header">
+
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#projects">Project</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>CSE-STUDENT</p>
+                <h1>Hello I'm <span>Visvapriyan</span><br> From India</h1>
+            </div>
+        </div>
+    </div>
+    <!-- ------------------about----------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links"onclick="opentab('experience')"">Experience</p>
+                        <p class="tab-links"onclick="opentab('education-tab')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab"id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing webapp interfaces</li>
+                            <li><span>Web Development</span><br>Webapp Development</li>
+                            <li><span>App Development</span><br>Building android/ios apps</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents "id="experience">
+                        <ul>
+                            <li><span>2021 - Current</span><br>UI/UX Design Training at ET Institute</li>
+                            <li><span>2019 - 2021</span><br>Team lead at StarApp LLC.</li>
+                            <li><span>2017 - 2019</span><br>UI/UX Design Executive at Coin Digital Ltd.</li>
+                            <li><span>2016 - 2017</span><br>Internship at ekart eCommerce.</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents"id="education-tab">
+                        <ul>
+                            <li><span>2016</span><br>UI/UX Design Training at ET Institute</li>
+                            <li><span>2016</span><br>MBA from MIT Bangalore.</li>
+                            <li><span>2014</span><br>BBA from ISM Bangalore.</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- education-->
+     <div id="education">
+        <div class="container">
+            <h1 class="sub-title">Education</h1>
+                <div class="education-list">
+                    <div>
+                        <h2>BBA from ISM Bangalore.</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
+                        <a href="#">learn more</a>
+                    </div>
+                    <div>
+                        <h2>MBA from MIT Bangalore.</h2>
+                        <p>labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercita</p>
+                        <a href="#">learn more</a>
+                    </div>
+                    <div>
+                        <h2>UI/UX Design Training at ET Institute</h2>
+                        <p>eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <a href="#">learn more</a>
+                    </div>
+                </div>
+        </div>
+     </div>
+    <!--projects-->
+    <div id="projects">
+        <div class="container">
+            <h1 class="sub-title">Projects</h1>
+            <div class="project-list">
+                <div class="project-content">
+                    <h2>My Recent Work</h2>
+                    <p>
+                        <strong>Project 1 — Website Design:</strong> A clean, responsive
+                        website focused on clear navigation and a smooth experience across
+                        desktop and mobile screens.
+                    </p>
+                    <p>
+                        <strong>Project 2 — Creative UI:</strong> A visual interface concept
+                        that combines bold imagery, thoughtful layouts, and easy-to-use
+                        interactions.
+                    </p>
+                    <p class="project-note">Designed with curiosity. Built with care.</p>
+                    <a href="#projects">Explore my work</a>
+                </div>
+                <div class="project-images">
+                    <img src="images/work-1.png" alt="Preview of project one">
+                    <img src="images/work-2.png" alt="Preview of project two">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--contact-->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p>contact@example.com</p>
+                    <p>+91 1234567890</p>
+
+                </div>
+                <div class="contact-right">
+
+                </div>
+                <a href="images/my-cv.pdf" download class="btn btn2">Download CV </a>
+            </div>
+
+
+            <div class="contact-form">
+                <form name="Submit-to-Google-Sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea rows="6" name="Message" placeholder="Your Message" required></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+<script>
+    var tablinks=document.getElementsByClassName("tab-links");
+    var tabcontents=document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>  
+<script>
+	const scriptURL = 'https://script.google.com/macros/s/AKfycbyOsbB9MXgKHhLnKU6uxveZk1RzznCuHrKftPljfGVsyBi34_fB7juWhpBT7ShRYz3yow/exec'
+	const form = document.forms['Submit-to-Google-Sheet']
+    const msg = document.getElementById("msg")
+
+	form.addEventListener('submit', e => {
+		e.preventDefault()
+		fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+			.then(response => response.json())
+			.then(response => console.log('Success!', response))
+            msg.innerHTML = "Message sent successfully"
+            settimeout(function(){
+                msg.innerHTML = ""
+            }, 5000)
+            form.reset()
+			.catch(error => console.error('Error!', error.message))
+	})
+</script>
+</body>
+</html>
